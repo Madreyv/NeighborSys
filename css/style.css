@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0; 
+  font-family: sans-serif;
+}
+
+header{
+  z-index: 9;
+	width: 100%;
+	display: block;
+    height: 100px;
+	background-color: #19b5fe;
+	-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow:         0px 2px rgba(170, 166, 166, 0.77);
+}
+
+h1{
+	padding-top: 0.9%;
+  padding-left: 1.6%;
+  font-size: 35px;
+  color: white;
+}
+
+main{
+	margin-top: 5%;
+    margin-left: 3%;
+} 
+
+th{
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+  min-width: 65px;
+}
+
+td{
+  font-size: 11px;
+}
+
+tr:nth-child(2n+2) {
+    background: #ccc;
+}
+
+label+input{
+  display: block;
+  margin-bottom: 2% !important;
+}
+
+a{
+  color: white!important;
+}
+
+a:hover{
+  color: white!important;
+  text-decoration: none !important;
+}
+
+fieldset{
+  z-index: 0;
+}
+
+button h4{
+  margin: 0;
+}
+
+.menu{
+  
+}
+.menu,.sub-menu {
+    list-style: none;
+}
+.sub-menu {
+    background: #19b5fe;
+}
+.menu a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.menu li {
+  margin-left: 2%;
+  position: relative;
+}
+.menu > li {
+    float: left;
+}
+.menu > li:hover {
+    background: #19b5fe;
+    z-index: 1;
+}
+.menu li:hover > .sub-menu {
+    display: block;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+.sub-menu li{
+  margin-left: 0;
+}
+.sub-menu li:hover {
+    background: #555;
+
+}
+.sub-menu .sub-menu {
+    top: 0;
+    left: 100%;
+}
+
+.sair{
+  float: right;
+  margin-right: 10px; 
+}
+
+.linha{
+  display: inline-block !important;
+}
+
+.tabela{
+  width: 95%;
+  text-align: center;
+  margin-bottom: 15px !important;
+}
+
+.form-control{
+  width: auto !important;
+}
+
+.botao{
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  min-height: 22px;
+  float: right;
+  display: block !important;
+  margin-top: 3px !important;
+  margin-bottom: 3px !important;
+  margin-right: 10px;
+  width: 20px;
+   
+}
+
+.botaoEditar{
+  background: url(../img/writer.png);
+}
+
+.botaoDelete{
+  background: url(../img/error.png);
+}
+
+.botao>a>input {
+    display: block !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+}
+
+button>input{
+  float: right;
+  margin-right: 2%;
+}
+
+.custom-select{
+  width: auto !important;
+  display: block !important;
+}
+
+.abasLink{
+  color: black !important;
+}
+
+.abasLink:hover{
+  background-color:  #007bff !important;
+}
+
+.abasLink.active{
+  background-color: #007bff !important;
+  color: white !important;
+}
+
+tr.inicio {
+  display: none !important;
+}
+tr.show{
+  display: table-row !important;
+}
+
+.total{
+  position: relative;
+  float: right;
+  right: 10%;
+}
+.fundoPreto{
+  border-color: #ccc;
+  border-radius: 10px;
+  background-color: black;
+  position: absolute;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  top: 0;
+  left: 0
+}
+.quadroAlerta{
+  border: 1px solid;
+  border-color: #ccc;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  padding: 10px;
+  top: 50%;
+  left: 35%;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.hide{
+  display: none;
+}
+
+.elementoPesquisa{
+  display: inline-block !important;
+}
+
+@-webkit-keyframes fadeOut {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; } 
+}
+@-moz-keyframes fadeOut {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; } 
+}
+@-o-keyframes fadeOut {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; } 
+}
+@keyframes fadeOut {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; } 
+}
+
+.fadeIn {
+  color: red;
+  -webkit-animation: fadeOut 3s ease-in-out;
+  -moz-animation: fadeOut 3s ease-in-out;
+  -o-animation: fadeOut 3s ease-in-out;
+  animation: fadeOut 3s ease-in-out;
+  opacity: 0;
+}
+
+footer{
+  width: 100%;
+  background: #555;
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+
+.mostrar_print{
+  display: none;
+}
+
+@media print{
+  .esconder_print{
+    display: none;
+  }
+
+  .mostrar_print{
+    display: block !important;
+  }
+}
+
